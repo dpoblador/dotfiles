@@ -8,6 +8,7 @@ David Poblador i Garcia dotfiles
 * `.hgrc`           Mercurial config
 * `.screenrc`       Screen config
 * `.vimrc`          VIM config
+* `.zshrc`          ZSH config
 
 
 ### Extras
