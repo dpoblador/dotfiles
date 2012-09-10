@@ -30,8 +30,9 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(autojump git pip)
+[[ "$(uname -s)" == "Darwin" ]] && plugins=(brew osx ${plugins})
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/coreutils/8.19/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/munki
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/coreutils/8.19/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/munki:
