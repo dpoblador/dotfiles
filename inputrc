@@ -1,0 +1,3 @@
+# Make ^arrow move the cursor 1 word
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word

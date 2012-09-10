@@ -1,0 +1,8 @@
+defutf8 on
+autodetach on
+startup_message off
+defscrollback 30000
+termcapinfo xterm-256color ti@:te@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}]'
+screen 0 bash --login

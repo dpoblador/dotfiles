@@ -1,0 +1,26 @@
+[user]
+	name = David Poblador i Garcia
+	email = david@poblador.com
+
+[alias]
+    serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    who = shortlog -s --
+
+[branch]
+    autosetuprebase = always
+
+[push]
+    default = tracking
+
+[core]
+    excludesfile = ~/.gitignore_global
+[color]
+    ui = true
+[mergetool]
+    keepBackup = true
