@@ -30,8 +30,6 @@ set smartcase
 set showmatch
 
 " Visible characters
-set listchars=tab:»·,eol:↵,trail:⋅,extends:❯,precedes:❮
-set list
 
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
