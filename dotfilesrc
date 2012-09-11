@@ -5,4 +5,5 @@ ignore = [
     '.gitignore',
     '.DS_Store',
     'README.md',
+    '.ssh/known_hosts',
     '*.swp']
