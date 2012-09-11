@@ -4,9 +4,6 @@ Host *
     NumberOfPasswordPrompts 1
     IdentityFile ~/.private/ssh-keys/id_dsa_personal
     IdentityFile ~/.private/ssh-keys/dpoblador_id_rsa
-    IdentityFile ~/.private/ssh-keys/id_rsa_spotify.orig
-    IdentityFile ~/.private/ssh-keys/id_dsa_floraqueen
-    IdentityFile ~/.private/ssh-keys/id_dsa_flumotion
     #VisualHostKey yes
     AddressFamily inet
     Compression yes
@@ -23,7 +20,6 @@ Host *.spotify.net *.sto *.ash *.lon *.d
     ForwardAgent yes
     ServerAliveInterval 1200
     IdentityFile ~/.private/ssh-keys/dpoblador_id_rsa
-    IdentityFile ~/.private/ssh-keys/id_rsa_spotify.orig
 
 Host irc
     User david
