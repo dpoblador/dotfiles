@@ -2,6 +2,8 @@
 " Basics
 """"""""""""""""""""
 
+set encoding=utf8
+
 " Look and feel
 behave xterm
 set background=dark
@@ -36,7 +38,6 @@ autocmd FileType text setlocal textwidth=78
 
 " Syntax
 syntax on
-set encoding=utf8
 
 " No beep
 set noerrorbells
