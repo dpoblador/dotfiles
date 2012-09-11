@@ -1,0 +1,44 @@
+# Generic
+Host *
+    ServerAliveInterval 30
+    NumberOfPasswordPrompts 1
+    IdentityFile ~/.private/ssh-keys/dpoblador_id_rsa
+    IdentityFile ~/.private/ssh-keys/id_rsa_spotify.orig
+    IdentityFile ~/.private/ssh-keys/id_dsa_personal
+    IdentityFile ~/.private/ssh-keys/id_dsa_floraqueen
+    IdentityFile ~/.private/ssh-keys/id_dsa_flumotion
+    #VisualHostKey yes
+    AddressFamily inet
+    Compression yes
+    Ciphers arcfour,blowfish-cbc
+    ControlMaster auto
+    ControlPath /tmp/socket-%r@%h:%p
+    ForwardAgent yes
+    EscapeChar ~
+    StrictHostKeyChecking no
+
+# Spotify Specific
+Host *.spotify.net *.sto *.ash *.lon *.d
+    ForwardAgent yes
+    ServerAliveInterval 1200
+
+Host irc
+    User david
+    HostName poblador.com
+    IdentityFile ~/.private/ssh-keys/id_dsa_personal
+
+# Personal
+Host davidpoblador.com
+    User david
+    VisualHostKey yes
+
+Host vm1
+    User dpoblador
+    HostName localhost
+    Port 2221
+
+Host vm2
+    User dpoblador
+    HostName localhost
+    Port 2222
+
