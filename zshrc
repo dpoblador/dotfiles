@@ -39,3 +39,6 @@ export PATH=~/.bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/coreut
 
 # Control+U is annoying by default
 bindkey \^U backward-kill-line
+
+# GTK env vars
+export GTK_PATH=/usr/local/lib/gtk-2.0
