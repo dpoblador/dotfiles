@@ -36,3 +36,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/coreutils/8.19/libexec/gnubin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/munki:
+
+# Control+U is annoying by default
+bindkey \^U backward-kill-line
