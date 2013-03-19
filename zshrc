@@ -8,8 +8,8 @@ ZSH=$HOME/.omz
 ZSH_THEME="robbyrussell"
 
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.omz"
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.omz"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
