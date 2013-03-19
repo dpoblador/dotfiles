@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Starting VM $1"
+VBoxManage startvm "VM$1" --type headless
