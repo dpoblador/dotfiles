@@ -16,7 +16,7 @@ Host *
     HashKnownHosts no
 
 # Spotify Specific
-Host *.spotify.net *.sto *.ash *.lon *.d
+Host *.spotify.net *.sto *.ash *.lon *.d *.sjc1
     ForwardAgent yes
     ServerAliveInterval 1200
     IdentityFile ~/.private/ssh-keys/dpoblador_id_rsa
