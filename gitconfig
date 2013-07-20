@@ -1,6 +1,7 @@
 [user]
 	name = David Poblador i Garcia
-	email = dpoblador@spotify.com
+	#email = dpoblador@spotify.com
+	email = david@poblador.com
 
 [alias]
     serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
@@ -20,7 +21,9 @@
 
 [core]
     excludesfile = ~/.gitignore_global
+
 [color]
     ui = true
+
 [mergetool]
     keepBackup = true

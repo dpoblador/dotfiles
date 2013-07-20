@@ -1,3 +1,8 @@
 [ui]
-username = David Poblador i Garcia <dpoblador@spotify.com>
+#username = David Poblador i Garcia <dpoblador@spotify.com>
+username = David Poblador i Garcia <david@poblador.com>
 ignore = /Users/dpoblador/.hgignore_global
+verbose = True
+
+[extensions]
+purge =

@@ -4,6 +4,9 @@ Host *
     NumberOfPasswordPrompts 1
     IdentityFile ~/.private/ssh-keys/id_dsa_personal
     IdentityFile ~/.private/ssh-keys/dpoblador_id_rsa
+    #IdentityFile ~/.private/ssh-keys/id_rsa_spotify.orig
+    #IdentityFile ~/.private/ssh-keys/id_dsa_floraqueen
+    #IdentityFile ~/.private/ssh-keys/id_dsa_flumotion
     #VisualHostKey yes
     AddressFamily inet
     Compression yes
@@ -30,14 +33,3 @@ Host irc
 Host davidpoblador.com
     User david
     VisualHostKey yes
-
-Host vm1
-    User dpoblador
-    HostName localhost
-    Port 2221
-
-Host vm2
-    User dpoblador
-    HostName localhost
-    Port 2222
-

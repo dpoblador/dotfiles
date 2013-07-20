@@ -12,7 +12,9 @@ set backspace=indent,eol,start
 set nobackup
 set history=50
 set ruler
+
 set showcmd
+set showmode            " Show current vim mode
 
 " Tab behavior
 set shiftwidth=4
@@ -50,3 +52,24 @@ set tm=500
 set nobackup
 set nowb
 set noswapfile
+
+" Low priority filename suffixes for filename completion {{{
+set suffixes-=.h        " Don't give .h low priority
+set suffixes+=.log
+set suffixes+=.bak
+set suffixes+=~
+set suffixes+=.swp
+" }}}
+
+" Version 6.0-specific stuff
+if version >= 600
+    syntax enable
+    filetype on
+    filetype plugin on
+    filetype indent on
+else
+    syntax on
+endif
+
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
+au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
