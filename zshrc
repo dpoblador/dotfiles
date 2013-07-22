@@ -42,3 +42,5 @@ bindkey \^U backward-kill-line
 
 # GTK env vars
 export GTK_PATH=/usr/local/lib/gtk-2.0
+
+export GOPATH=~/go
