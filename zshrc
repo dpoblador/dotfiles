@@ -12,7 +12,7 @@ alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.omz"
 
 # Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
@@ -24,10 +24,10 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Which plugins would you like to load? (plugins can be found in ~/.omz/plugins/*)
+# Custom plugins may be added to ~/.omz/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(autojump git pip)
 [[ "$(uname -s)" == "Darwin" ]] && plugins=(brew osx ${plugins})
