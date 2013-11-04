@@ -5,7 +5,8 @@ ZSH=$HOME/.omz
 # Look in ~/.omz/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="jreese"
 
 # Example aliases
 alias zshconfig="subl ~/.zshrc"
@@ -42,5 +43,8 @@ bindkey \^U backward-kill-line
 
 # GTK env vars
 export GTK_PATH=/usr/local/lib/gtk-2.0
-
 export GOPATH=~/go
+launchctl setenv GOPATH $GOPATH
+
+for f in ~/.load/*.sh; do source $f; done
+
