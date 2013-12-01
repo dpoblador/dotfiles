@@ -46,5 +46,5 @@ export GTK_PATH=/usr/local/lib/gtk-2.0
 export GOPATH=~/go
 launchctl setenv GOPATH $GOPATH
 
-for f in ~/.load/*.sh; do source $f; done
+for f in ~/.load/*.sh; do source $f; done 2>/dev/null
 
